@@ -57,7 +57,7 @@ public class HelloBiodome04 {
             }
 
         } else {
-            System.out.println("입력하세요 : ");
+            System.out.println("입력된 값이 올바르지 않습니다. [온도][습도][산소농도] 순서 대로 숫자 값을 입력해주세요");
 
         }
     }
