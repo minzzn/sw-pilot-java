@@ -15,22 +15,22 @@ public class RoadToBiodome05 {
         if (start >= end)
             return;
         int pivot = start;
-        int lo = start + 1;
-        int hi = end;
+        int low = start + 1;
+        int high = end;
 
 
-        while (lo <= hi) {
-            while (lo <=end && arr[lo] <= arr[pivot])
-                lo++;
-            while (hi > start && arr [hi] >= arr[pivot])
-                hi--;
-            if (lo > hi)
-                swap(arr, hi, pivot);
+        while (low <= high) {
+            while (low <=end && arr[low] <= arr[pivot])
+                low++;
+            while (high > start && arr [high] >= arr[pivot])
+                high--;
+            if (low > high)
+                swap(arr, high, pivot);
             else
-                swap(arr, lo, hi);
+                swap(arr, low, high);
         }
-        quickSort(arr, start, hi-1);
-        quickSort(arr, hi + 1, end);
+        quickSort(arr, start, high-1);
+        quickSort(arr, high + 1, end);
     }
 
     private static void swap(int[] arr, int i, int j) {

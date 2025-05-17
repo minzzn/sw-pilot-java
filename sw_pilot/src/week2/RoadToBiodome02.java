@@ -1,7 +1,5 @@
 package week2;
 
-
-import java.util.Arrays;
 import java.util.Objects;
 
 public class RoadToBiodome02 {
