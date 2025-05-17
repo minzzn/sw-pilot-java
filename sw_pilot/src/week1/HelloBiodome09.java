@@ -1,3 +1,5 @@
+package week1;
+
 public class HelloBiodome09 {
     public static void main(String[] args) {
         if (args.length > 0) {

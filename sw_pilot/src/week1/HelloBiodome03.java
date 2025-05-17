@@ -1,3 +1,5 @@
+package week1;
+
 public class HelloBiodome03 {
 
     final double PI = 3.14;

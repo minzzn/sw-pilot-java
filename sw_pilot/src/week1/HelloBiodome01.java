@@ -1,9 +1,10 @@
+package week1;
+
 public class HelloBiodome01 {
     public static void main(String[] args) {
         String name= args[0];
         if (args.length == 0) {
             System.out.println("이름을 다시 입력해 주세요");
-            return;
         }
         else{
             System.out.print("이름을 입력하세요: ");

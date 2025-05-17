@@ -1,5 +1,4 @@
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+package week1;
 
 public class HelloBiodome07 {
     public static void compressInput(String genecode, char currentChar, char upperCurrentChar, int i) {

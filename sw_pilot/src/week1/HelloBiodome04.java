@@ -1,14 +1,17 @@
+package week1;
+
 public class HelloBiodome04 {
 
     static boolean isChecktemp;
     static boolean isCheckhumid;
     static boolean isCheckoxygen;
 
+    // 안정한 상태일 때의 조건
+    // 온도 : 10도 이상 27.5도 미만
+    // 습도 : 40도 초과 60도 미만
+    // 산소 농도 : 19.5도 이상 23.5도 이하
+
     public static boolean checkRangeTemp(double temp) {
-        // 안정한 상태일 때의 조건
-        // 온도 : 10도 이상 27.5도 미만
-        // 습도 : 40도 초과 60도 미만
-        // 산소 농도 : 19.5도 이상 23.5도 이하
         if(10<=temp && temp<27.5){
             isChecktemp=true;
         }  else{
@@ -38,9 +41,11 @@ public class HelloBiodome04 {
                 double temp = Double.valueOf(args[0]);
                 double humid = Double.valueOf(args[1]);
                 double oxygen = Double.valueOf(args[2]);
+
                 checkRangeTemp(temp);
                 checkRangeHumid(humid);
                 checkRangeOxygen(oxygen);
+
                 if(isChecktemp && isCheckhumid && isCheckoxygen){
                     System.out.println("생명의 나무는 안정적인 상태입니다 :)");
                 }else if(!isChecktemp){
