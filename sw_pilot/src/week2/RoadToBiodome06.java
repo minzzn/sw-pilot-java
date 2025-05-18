@@ -51,7 +51,7 @@ public class RoadToBiodome06 {
         if (merge.length % 2 == 0) {
             median = (double) (merge[merge.length / 2 - 1] + merge[merge.length / 2]) / 2.0;
         } else {
-            median = (double) merge[merge.length / 2];
+            median = (double) (merge[merge.length / 2]);
         }
         return median;
 
