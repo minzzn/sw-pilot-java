@@ -51,12 +51,12 @@ public class RoadToBiodome08 {
 
     private void checkIsFull(){
         if(isFull()){
-            throw new IllegalStateException("스택이 가득참");
+            throw new IllegalStateException("큐가 가득참");
         }
     }
     private void checkIsEmpty(){
         if(isEmpty()){
-            throw new IllegalStateException("스택이 비었음");
+            throw new IllegalStateException("큐가 비었음");
         }
     }
 
