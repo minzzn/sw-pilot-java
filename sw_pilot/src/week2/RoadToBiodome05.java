@@ -20,7 +20,7 @@ public class RoadToBiodome05 {
 
 
         while (low <= high) {
-            while (low <=end && arr[low] <= arr[pivot])
+            while (low <= end && arr[low] <= arr[pivot])
                 low++;
             while (high > start && arr [high] >= arr[pivot])
                 high--;

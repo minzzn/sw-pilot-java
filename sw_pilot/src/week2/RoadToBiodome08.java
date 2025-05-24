@@ -31,10 +31,10 @@ public class RoadToBiodome08 {
         ++front;
     }
 
-    public void delete() {
-        checkIsEmpty();
-        ++front;
-    }
+//    public void delete() {
+//        checkIsEmpty();
+//        ++front;
+//    }
 
     public String peek() {
         checkIsEmpty();

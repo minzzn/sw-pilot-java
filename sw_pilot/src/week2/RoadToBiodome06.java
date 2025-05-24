@@ -42,7 +42,7 @@ public class RoadToBiodome06 {
             }
         }
 
-        if( index2  == m) {
+        if( index2  == m ) {
             while (index1 < n) {
                 merge[index++] = arr1[index1++];
             }
