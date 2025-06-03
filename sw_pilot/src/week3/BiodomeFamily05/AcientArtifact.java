@@ -5,6 +5,7 @@ public class AcientArtifact {
 
     public AcientArtifact(String name) {
         this.name = name;
+        System.out.println(name + " 유물이 생성되었습니다.");
     }
 
     public String getName() {
