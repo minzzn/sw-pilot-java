@@ -1,6 +1,5 @@
 package week3.BiodomeFamily06;
 
-import java.text.MessageFormat;
 import java.util.*;
 
 public class AnimalList {
@@ -59,13 +58,10 @@ public class AnimalList {
         while (deerIterator.hasNext()) {
             currentAnimal = deerIterator.next();
             // null 체크 및 조건 확인
-            // species 비교 == "deer"를 원하셨으므로 그대로 사용합니다. (일반적으로는 equals가 맞습니다)
             if (currentAnimal != null && Objects.equals(currentAnimal.getSpecies(), "사슴")) {
-                deersToMove.add(currentAnimal); // 이동시킬 deer 수집 (원본 객체 그대로)
-                deerIterator.remove();        // Iterator의 remove()를 사용하여 현재 순회 중인 요소 안전하게 삭제
+                deersToMove.add(currentAnimal);
+                deerIterator.remove();
             }
-            // 만약 species 비교를 == 대신 equals로 하고 싶다면:
-            // if (currentAnimal != null && "deer".equals(currentAnimal.getSpecies())) { ... }
         }
 
         if (!deersToMove.isEmpty()) {
