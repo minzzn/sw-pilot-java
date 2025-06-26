@@ -1,13 +1,13 @@
 package week4.RuleOfBiodome04;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BiologicalSystem<T> {
-    List organismList = new LinkedList<>();
+    ArrayList organismList;
 
-    public class BiologicalSystem() {
-
+    BiologicalSystem() {
+        organismList = new ArrayList<>();
     }
 
     public void add() {
