@@ -1,7 +1,6 @@
 package week6.RunBiodome02;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class EnergyDistributor {
     HashMap<String, Integer> areaEnergy;
